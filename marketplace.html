@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Virtual Marketplace — 3amiGlobalSphere™</title>
+<meta name="description" content="The 3amiGlobalSphere™ Virtual Marketplace — searchable profiles across ten discovery categories. Discover → Connect → Promote → Participate → Create Opportunity → Measure Impact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#221709;--cream:#fbf6ef;--crimson:#b3122e;--vermilion:#e8490f;--gold:#c9973f;--card:#ffffff;--muted:#7a6248}
+  *{box-sizing:border-box}
+  body{font-family:"Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink);margin:0;line-height:1.65}
+  .bar{height:6px;background:linear-gradient(90deg,var(--vermilion),var(--crimson),var(--gold))}
+  header.site{max-width:960px;margin:0 auto;padding:1rem 1.25rem 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem}
+  .brand{font-family:"Cinzel",serif;font-weight:700;font-size:1.15rem;letter-spacing:.04em}
+  .brand em{font-style:normal;color:var(--crimson)}
+  nav.top{display:flex;flex-wrap:wrap;gap:1rem;font-size:.92rem;font-weight:600}
+  nav.top a{color:var(--ink);text-decoration:none}
+  nav.top a:hover{color:var(--crimson)}
+  main{max-width:960px;margin:0 auto;padding:2rem 1.25rem 2rem}
+  h1{font-family:"Cinzel",serif;font-weight:700;font-size:2.2rem;letter-spacing:.03em;text-align:center;margin:.2rem 0 .1rem}
+  .tag{font-family:"Cinzel",serif;font-size:.95rem;letter-spacing:.2em;text-transform:uppercase;color:var(--crimson);text-align:center;margin:.2rem 0 1.4rem}
+  h2{font-family:"Cinzel",serif;font-size:1.3rem;color:var(--crimson);margin-top:2.4rem}
+  h2 .sub{display:block;font-family:"Open Sans",sans-serif;font-size:.9rem;color:var(--muted);margin-top:.2rem}
+  .search{margin:1.2rem 0 .4rem}
+  .search input{width:100%;padding:.85rem 1.1rem;font-size:1rem;border:1px solid #ecd9c3;border-radius:10px;background:var(--card);color:var(--ink)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:.9rem;margin-top:1rem}
+  .card{background:var(--card);border:1px solid #ecd9c3;border-left:5px solid var(--gold);border-radius:10px;padding:1rem 1.1rem;box-shadow:0 1px 3px rgba(60,30,0,.06)}
+  .card:hover{border-left-color:var(--crimson)}
+  .card h3{font-family:"Cinzel",serif;font-size:1.02rem;margin:.1rem 0 .35rem}
+  .card p{margin:.2rem 0 .4rem;font-size:.95rem}
+  .card a{color:var(--crimson);text-decoration:none;font-weight:600;font-size:.9rem}
+  .pill{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#fdf3e3;border:1px solid #ecd9c3;border-radius:999px;padding:.1rem .55rem;margin:0 .3rem .3rem 0;color:var(--muted)}
+  .pill.featured{background:var(--crimson);color:#fff;border-color:var(--crimson)}
+  .note{font-size:.9rem;color:var(--muted)}
+  .btn{display:inline-block;background:var(--crimson);color:#fff;text-decoration:none;font-weight:700;padding:.7rem 1.4rem;border-radius:10px}
+  footer{margin-top:3rem;font-size:.85rem;color:var(--muted);text-align:center}
+  footer a{color:var(--crimson);text-decoration:none;font-weight:600}
+  .hidden{display:none}
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<header class="site">
+  <div class="brand">3ami<em>Global</em></div>
+  <nav class="top">
+    <a href="/">Home</a>
+    <a href="/feed">The Feed</a>
+    <a href="/#ladiebuggz">LadieBuggz</a>
+    <a href="/#membership">Membership</a>
+    <a href="/#contact">Contact</a>
+  </nav>
+</header>
+<main>
+  <h1>Virtual Marketplace</h1>
+  <p class="tag">Discover · Connect · Promote</p>
+  <p>The marketplace is where visibility becomes opportunity: searchable member profiles, organized by the categories people actually come looking for. A member can belong to several categories at once. Discovery runs on category relevance, approved profile information, content quality, and your interests — and paid featured placements are always labeled as paid.</p>
+
+  <div class="search">
+    <input id="q" type="search" placeholder="Search categories and profiles — try “wellness”, “music”, “mentorship”…" aria-label="Search the marketplace">
+  </div>
+  <p class="note" id="count"></p>
+
+  <h2>Categories <span class="sub">The ten discovery categories of the Sphere</span></h2>
+  <div class="grid" id="cats">
+    <div class="card searchable" id="personal-development" data-k="personal development learn grow motivation mindfulness personal goals coaching growth"><h3>Personal Development</h3><p><strong>Learn and grow.</strong> Motivation, mindfulness, personal goals.</p></div>
+    <div class="card searchable" id="global-change" data-k="global change contribute sustainability advocacy humanitarian initiatives nonprofit"><h3>Global Change</h3><p><strong>Contribute to change.</strong> Sustainability, advocacy, humanitarian initiatives.</p></div>
+    <div class="card searchable" id="inspirational-stories" data-k="inspirational stories resilience everyday heroes kindness perseverance testimony"><h3>Inspirational Stories</h3><p><strong>Discover resilience.</strong> Everyday heroes, kindness, perseverance.</p></div>
+    <div class="card searchable" id="creative-expression" data-k="creative expression art music writing film dance fashion design"><h3>Creative Expression</h3><p><strong>Explore creativity.</strong> Art, music, writing, film, dance.</p></div>
+    <div class="card searchable" id="cultural-exchange" data-k="cultural exchange travel language heritage festivals culture"><h3>Cultural Exchange</h3><p><strong>Connect across cultures.</strong> Travel, language, heritage, festivals.</p></div>
+    <div class="card searchable" id="health-and-wellness" data-k="health wellness fitness nutrition mental wellness self-care wholeher"><h3>Health and Wellness</h3><p><strong>Support whole-person wellbeing.</strong> Fitness, nutrition, mental wellness, self-care.</p></div>
+    <div class="card searchable" id="technology-and-innovation" data-k="technology innovation ai digital media social innovation tech"><h3>Technology and Innovation</h3><p><strong>Discover new possibilities.</strong> AI, technology, digital media, social innovation.</p></div>
+    <div class="card searchable" id="education-and-learning" data-k="education learning resources training mentorship teaching courses"><h3>Education and Learning</h3><p><strong>Expand knowledge.</strong> Educational resources, training, mentorship.</p></div>
+    <div class="card searchable" id="community-building" data-k="community building volunteering partnerships professional networks events"><h3>Community Building</h3><p><strong>Find people and opportunities.</strong> Volunteering, partnerships, professional networks.</p></div>
+    <div class="card searchable" id="hope-and-resilience" data-k="hope resilience encouragement positive stories overcoming adversity inspiration"><h3>Hope and Resilience</h3><p><strong>Find encouragement.</strong> Positive stories, overcoming adversity, inspiration.</p></div>
+  </div>
+
+  <h2>Founding Profiles <span class="sub">The first houses of the Sphere — member profiles open at launch</span></h2>
+  <div class="grid" id="profiles">
+    <div class="card searchable" data-k="3amiglobal llc parent company orchestration technology innovation community building education learning buffalo">
+      <h3>3amiGlobal LLC</h3>
+      <p>The parent company — a system-level generative intelligence and orchestration engine designing ecosystems that convert attention into access, participation into ownership, and creativity into economic agency.</p>
+      <span class="pill">Technology and Innovation</span><span class="pill">Community Building</span><span class="pill">Education and Learning</span>
+      <p><a href="https://3amiglobal.com">3amiglobal.com →</a></p>
+    </div>
+    <div class="card searchable" data-k="ladiebuggz wellness style fashion storytelling community women health wellness creative expression be you buffalo">
+      <h3>LadieBuggz™</h3>
+      <p>The applied execution layer — Where Love Lives… and Identity Speaks. Wellness, style, storytelling, and community, built from the foundation of African American women's voices.</p>
+      <span class="pill">Health and Wellness</span><span class="pill">Creative Expression</span><span class="pill">Community Building</span>
+      <p><a href="https://ladiebuggz.com/links">ladiebuggz.com/links →</a></p>
+    </div>
+    <div class="card searchable" data-k="channel 3ami journalism storytelling media inspirational stories community conversations">
+      <h3>Channel 3ami™</h3>
+      <p>The independent editorial voice — Where the Story Becomes the Conversation. Impact journalism: amplify voices, preserve context, encourage understanding, inspire meaningful action.</p>
+      <span class="pill">Inspirational Stories</span><span class="pill">Community Building</span>
+      <p><a href="https://www.youtube.com/@Channel3ami">youtube.com/@Channel3ami →</a></p>
+    </div>
+    <div class="card searchable" data-k="example hope studio demonstration fictional placeholder inspirational stories creative expression hope resilience">
+      <h3>Example Hope Studio</h3>
+      <p><em>Demonstration profile — a fictional placeholder showing how a member profile will appear. This is not a real subscriber.</em></p>
+      <span class="pill">Inspirational Stories</span><span class="pill">Creative Expression</span><span class="pill">Hope and Resilience</span>
+      <p><a href="https://example.org/hope-studio" rel="nofollow">example.org/hope-studio →</a></p>
+    </div>
+  </div>
+
+  <h2>List Your Profile</h2>
+  <p>Membership opens in stages, beginning with the founding profiles. Community participation is always free; promotional memberships — Creator Profile, Featured Member, Business Partner, Strategic Partner — carry the marketplace. Pricing and the exact monthly deliverables for each tier will be published here at launch.</p>
+  <p><a class="btn" href="mailto:DerrellHennings@3amiglobal.com?subject=3amiGlobalSphere%20Marketplace%20Profile%20Interest">Register Profile Interest</a></p>
+
+  <footer>
+    <p><a href="/">← Back to 3amiGlobalSphere™</a></p>
+    <p>© 3amiGlobal LLC · 3amiGlobal LLC, C/O Derrell Hennings, 97 West Avenue, Buffalo, NY 14201</p>
+  </footer>
+</main>
+<script>
+  var q = document.getElementById('q'), cards = Array.prototype.slice.call(document.querySelectorAll('.searchable')), count = document.getElementById('count');
+  function apply(){
+    var v = q.value.trim().toLowerCase(), shown = 0;
+    cards.forEach(function(c){
+      var hit = !v || (c.textContent + ' ' + (c.getAttribute('data-k')||'')).toLowerCase().indexOf(v) !== -1;
+      c.classList.toggle('hidden', !hit); if (hit) shown++;
+    });
+    count.textContent = v ? (shown + ' match' + (shown === 1 ? '' : 'es') + ' for “' + q.value.trim() + '”') : '';
+  }
+  q.addEventListener('input', apply);
+</script>
+</body>
+</html>

@@ -3,53 +3,153 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>3amiGlobal LLC — Change the World, One Moment at a Time</title>
-<meta name="description" content="3amiGlobal LLC is a system-level generative intelligence and orchestration engine, and the parent company of LadieBuggz and the Virtual Love Code.">
+<title>3amiGlobalSphere™ — 3amiGlobal LLC</title>
+<meta name="description" content="3amiGlobalSphere™ is the digital experience platform of 3amiGlobal LLC — a global virtual marketplace and media network. Connecting People. Amplifying Voices. Creating Possibilities.">
 <meta name="p:domain_verify" content="089615138f50573943319724cb65576c"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{--ink:#221709;--cream:#fbf6ef;--crimson:#b3122e;--vermilion:#e8490f;--gold:#c9973f;--card:#ffffff}
+  :root{--ink:#221709;--cream:#fbf6ef;--crimson:#b3122e;--vermilion:#e8490f;--gold:#c9973f;--card:#ffffff;--muted:#7a6248}
   *{box-sizing:border-box}
   body{font-family:"Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--cream);color:var(--ink);margin:0;line-height:1.65}
   .bar{height:6px;background:linear-gradient(90deg,var(--vermilion),var(--crimson),var(--gold))}
-  main{max-width:680px;margin:0 auto;padding:3rem 1.25rem 2rem}
-  h1{font-family:"Cinzel",serif;font-weight:700;font-size:2.2rem;letter-spacing:.05em;text-align:center;margin:.2rem 0 .1rem}
-  .tag{font-family:"Cinzel",serif;font-size:.95rem;letter-spacing:.22em;text-transform:uppercase;color:var(--crimson);text-align:center;margin:.2rem 0 1.6rem}
-  h2{font-family:"Cinzel",serif;font-size:1.2rem;color:var(--crimson);margin-top:2rem}
+  header.site{max-width:960px;margin:0 auto;padding:1rem 1.25rem 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem}
+  .brand{font-family:"Cinzel",serif;font-weight:700;font-size:1.15rem;letter-spacing:.04em}
+  .brand em{font-style:normal;color:var(--crimson)}
+  nav.top{display:flex;flex-wrap:wrap;gap:1rem;font-size:.92rem;font-weight:600}
+  nav.top a{color:var(--ink);text-decoration:none}
+  nav.top a:hover{color:var(--crimson)}
+  main{max-width:960px;margin:0 auto;padding:2rem 1.25rem 2rem}
+  .hero{text-align:center;padding:1.5rem 0 .5rem}
+  h1{font-family:"Cinzel",serif;font-weight:700;font-size:2.6rem;letter-spacing:.03em;margin:.2rem 0 .2rem}
+  h1 em{font-style:normal;color:var(--crimson)}
+  .tag{font-family:"Cinzel",serif;font-size:1rem;letter-spacing:.18em;text-transform:uppercase;color:var(--crimson);margin:.3rem 0 .4rem}
+  .tag2{font-size:.95rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:.1rem 0 1.2rem}
+  .hero p.lede{max-width:720px;margin:0 auto 1.2rem;font-size:1.05rem}
+  .cta{display:flex;flex-wrap:wrap;gap:.7rem;justify-content:center;margin:1rem 0 .5rem}
+  .btn{display:inline-block;background:var(--crimson);color:#fff;text-decoration:none;font-weight:700;padding:.7rem 1.4rem;border-radius:10px}
+  .btn.alt{background:var(--card);color:var(--ink);border:1px solid #ecd9c3}
+  .btn:hover{opacity:.92}
+  h2{font-family:"Cinzel",serif;font-size:1.35rem;color:var(--crimson);margin-top:2.6rem}
+  h2 .sub{display:block;font-family:"Open Sans",sans-serif;font-size:.9rem;color:var(--muted);letter-spacing:0;text-transform:none;margin-top:.2rem}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.9rem;margin-top:1rem}
+  .card{background:var(--card);border:1px solid #ecd9c3;border-left:5px solid var(--gold);border-radius:10px;padding:1rem 1.1rem;box-shadow:0 1px 3px rgba(60,30,0,.06)}
+  .card:hover{border-left-color:var(--crimson)}
+  .card h3{font-family:"Cinzel",serif;font-size:1.02rem;margin:.1rem 0 .35rem}
+  .card p{margin:.2rem 0 .4rem;font-size:.95rem}
+  .card a{color:var(--crimson);text-decoration:none;font-weight:600;font-size:.9rem}
+  .cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.7rem;margin-top:1rem}
+  .cat{display:block;background:var(--card);border:1px solid #ecd9c3;border-radius:10px;padding:.8rem 1rem;color:var(--ink);text-decoration:none;box-shadow:0 1px 3px rgba(60,30,0,.06)}
+  .cat strong{display:block;font-family:"Cinzel",serif;font-size:.98rem}
+  .cat span{font-size:.85rem;color:var(--muted)}
+  .cat:hover{border-color:var(--gold)}
+  .flow{text-align:center;font-family:"Cinzel",serif;font-size:1rem;letter-spacing:.04em;margin:1.4rem 0 .2rem;color:var(--ink)}
+  .flow b{color:var(--crimson)}
+  table.tiers{width:100%;border-collapse:collapse;margin-top:1rem;background:var(--card);border:1px solid #ecd9c3;border-radius:10px;overflow:hidden}
+  table.tiers th,table.tiers td{padding:.7rem .9rem;text-align:left;font-size:.94rem;border-bottom:1px solid #f0e2cd;vertical-align:top}
+  table.tiers th{font-family:"Cinzel",serif;background:#fdf3e3}
+  table.tiers tr:last-child td{border-bottom:none}
+  .note{font-size:.9rem;color:var(--muted)}
   .links{display:flex;flex-direction:column;gap:.7rem;margin-top:1rem}
   .links a{display:block;background:var(--card);border:1px solid #ecd9c3;border-left:5px solid var(--gold);border-radius:10px;padding:.85rem 1.1rem;color:var(--ink);text-decoration:none;font-weight:600;box-shadow:0 1px 3px rgba(60,30,0,.06)}
   .links a:hover{border-left-color:var(--crimson)}
-  .links a span{display:block;font-weight:400;font-size:.85rem;color:#7a6248}
-  footer{margin-top:2.5rem;font-size:.85rem;color:#7a6248;text-align:center}
+  .links a span{display:block;font-weight:400;font-size:.85rem;color:var(--muted)}
+  footer{margin-top:3rem;font-size:.85rem;color:var(--muted);text-align:center}
   footer a{color:var(--crimson);text-decoration:none;font-weight:600}
 </style>
 </head>
 <body>
 <div class="bar"></div>
+<header class="site">
+  <div class="brand">3ami<em>Global</em></div>
+  <nav class="top">
+    <a href="/marketplace">Marketplace</a>
+    <a href="#media">Media</a>
+    <a href="/feed">The Feed</a>
+    <a href="#ladiebuggz">LadieBuggz</a>
+    <a href="#membership">Membership</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 <main>
-  <h1>3amiGlobal</h1>
-  <p class="tag">Be in The Moment</p>
+  <section class="hero">
+    <h1>3amiGlobal<em>Sphere</em>™</h1>
+    <p class="tag">Connecting People. Amplifying Voices. Creating Possibilities.</p>
+    <p class="tag2">Innovate. Inspire. Impact.</p>
+    <p class="lede">The Sphere is the digital experience platform of 3amiGlobal LLC — an interconnected environment where people discover opportunities, participate in conversations, promote their work, share their stories, and build real relationships. Not a page that displays information: a global virtual marketplace and media network, built to package hope and turn visibility into connection, participation, and economic opportunity.</p>
+    <div class="cta">
+      <a class="btn" href="/marketplace">Enter the Marketplace</a>
+      <a class="btn alt" href="#membership">Become a Member</a>
+    </div>
+    <p class="flow">Discover <b>→</b> Connect <b>→</b> Promote <b>→</b> Participate <b>→</b> Create Opportunity <b>→</b> Measure Impact</p>
+  </section>
 
-  <h2>About Us</h2>
-  <p>At our digital media company, our mission is to change the world one moment at a time. We firmly believe that even the smallest, most meaningful changes have the potential to create a significant impact on our world. Drawing inspiration from this philosophy, we are dedicated to empowering individuals, organizations, and communities to make small but important changes in their lives and in society.</p>
-  <p>Through our innovative digital media platforms, we aim to inspire and motivate people to take action. We want to ignite a sense of collective responsibility, encouraging individuals to think deeply about the consequences of their actions and the positive ripple effects they can create. By leveraging the power of technology and storytelling, we are committed to fostering a movement towards a better future where each small step leads us closer to a world of positive change.</p>
-  <p>Our platform serves as a catalyst for change, providing a space for individuals to share their stories, learn from one another, and connect with like-minded change makers. We believe that by amplifying the voices of those who have made a difference, we can inspire others to take action and become active participants in shaping a better world.</p>
-  <p>Join us on this journey of transformation. Together, we can make a lasting impact, one small but significant change at a time.</p>
+  <h2>The Five Systems <span class="sub">One connected ecosystem — five capabilities working together</span></h2>
+  <div class="grid">
+    <div class="card"><h3>Live Connection Hub</h3><p>Secure, real-time video experiences: private rooms, scheduled networking, community discussions, creator interviews, and virtual events — with host controls, consent, and moderation built in.</p></div>
+    <div class="card"><h3>Broadcasting Network</h3><p>The Sphere meets audiences where they already are — YouTube, Facebook, Instagram, and X programming and livestreams, gathered into one home and linked back to the original platforms.</p></div>
+    <div class="card"><h3>Media Network</h3><p>A central library of original productions, interviews, education, and community storytelling — Channel 3ami™, creative showcases, wellness programming, and Virtual Love Code™ productions.</p></div>
+    <div class="card"><h3>Community Participation</h3><p>Creators and community members contribute original videos and stories through a clear path: upload, safety screening, human moderation review, approval, publication.</p></div>
+    <div class="card"><h3>Virtual Marketplace</h3><p>Searchable profiles, category placement, direct links, featured campaigns, and subscriber dashboards — the engine that turns discovery into economic opportunity.</p><a href="/marketplace">Browse the marketplace →</a></div>
+    <div class="card"><h3>AI-Powered Discovery</h3><p>Intelligent categorization, relevant recommendations, and content assistance that support human editorial judgment — never replace it. Paid placements are always labeled as paid.</p></div>
+  </div>
+
+  <h2>Discover by Category <span class="sub">The marketplace discovery taxonomy — every profile can live in more than one</span></h2>
+  <div class="cats">
+    <a class="cat" href="/marketplace#personal-development"><strong>Personal Development</strong><span>Learn and grow</span></a>
+    <a class="cat" href="/marketplace#global-change"><strong>Global Change</strong><span>Contribute to change</span></a>
+    <a class="cat" href="/marketplace#inspirational-stories"><strong>Inspirational Stories</strong><span>Discover resilience</span></a>
+    <a class="cat" href="/marketplace#creative-expression"><strong>Creative Expression</strong><span>Explore creativity</span></a>
+    <a class="cat" href="/marketplace#cultural-exchange"><strong>Cultural Exchange</strong><span>Connect across cultures</span></a>
+    <a class="cat" href="/marketplace#health-and-wellness"><strong>Health and Wellness</strong><span>Support whole-person wellbeing</span></a>
+    <a class="cat" href="/marketplace#technology-and-innovation"><strong>Technology and Innovation</strong><span>Discover new possibilities</span></a>
+    <a class="cat" href="/marketplace#education-and-learning"><strong>Education and Learning</strong><span>Expand knowledge</span></a>
+    <a class="cat" href="/marketplace#community-building"><strong>Community Building</strong><span>Find people and opportunities</span></a>
+    <a class="cat" href="/marketplace#hope-and-resilience"><strong>Hope and Resilience</strong><span>Find encouragement</span></a>
+  </div>
+
+  <h2 id="ladiebuggz">The LadieBuggz Experience <span class="sub">A distinctive house inside the Sphere — its own identity, shared infrastructure</span></h2>
+  <p>LadieBuggz™ is the women-centered creative and community experience within the 3amiGlobal ecosystem: authentic representation, wellness, self-expression, entrepreneurship, and applied creative participation — built from the foundation of African American women's voices, and welcoming to women and communities everywhere.</p>
+  <div class="cta" style="justify-content:flex-start">
+    <a class="btn" href="https://ladiebuggz.com/links">Enter LadieBuggz</a>
+  </div>
+
+  <h2 id="media">The Media Network</h2>
+  <nav class="links">
+    <a href="/feed">The Feed <span>The @3amiglobal feed set — five short teachings on power, peace, love, character, and purpose</span></a>
+    <a href="https://www.youtube.com/@Channel3ami">Channel 3ami™ <span>Where the story becomes the conversation — impact journalism and storytelling</span></a>
+    <a href="https://www.youtube.com/@3amiGlobal">3amiGlobal on YouTube <span>Original productions and programming</span></a>
+    <a href="https://www.youtube.com/@LadieBuggzVirtualX">Virtual Love Code™ <span>The story world of LADIE — series, shorts, and productions</span></a>
+  </nav>
+
+  <h2 id="membership">Membership <span class="sub">Community participation is free. Promotional memberships power the marketplace.</span></h2>
+  <table class="tiers">
+    <tr><th>Membership</th><th>Primary function</th><th>Benefits</th></tr>
+    <tr><td><strong>Community Access</strong></td><td>Public participation</td><td>Discovery, viewing, community content</td></tr>
+    <tr><td><strong>Creator Profile</strong></td><td>Entry-level promotion</td><td>Profile, category listing, direct links</td></tr>
+    <tr><td><strong>Featured Member</strong></td><td>Expanded monthly visibility</td><td>Promotional placements, content features</td></tr>
+    <tr><td><strong>Business Partner</strong></td><td>Business advertising</td><td>Campaign coordination, enhanced exposure</td></tr>
+    <tr><td><strong>Strategic Partner</strong></td><td>Collaborative initiatives</td><td>Sponsorships, co-produced programming</td></tr>
+  </table>
+  <p class="note">Founding membership structure shown. Monthly pricing and the exact promotional deliverables for each tier are being finalized and will be published here at launch — every paid tier will state precisely what is delivered each month.</p>
+  <div class="cta" style="justify-content:flex-start">
+    <a class="btn" href="mailto:DerrellHennings@3amiglobal.com?subject=3amiGlobalSphere%20Membership%20Interest">Register Membership Interest</a>
+  </div>
 
   <h2>The Ecosystem</h2>
   <nav class="links">
-    <a href="/feed">The Feed <span>The @3amiglobal feed set — five short teachings</span></a>
-    <a href="https://ladiebuggz.com">LadieBuggz™ <span>Our applied execution layer — wellness, style, storytelling, community</span></a>
+    <a href="https://ladiebuggz.com">LadieBuggz™ <span>The applied execution layer — wellness, style, storytelling, community</span></a>
     <a href="https://www.instagram.com/3amiglobal">Instagram <span>@3amiglobal</span></a>
     <a href="https://x.com/3amiglobal">X <span>@3amiglobal</span></a>
     <a href="https://www.youtube.com/@3amiGlobal">YouTube <span>@3amiGlobal</span></a>
     <a href="https://www.pinterest.com/3amiglobal/">Pinterest <span>The Man Beyond the Image™ — @3amiglobal</span></a>
   </nav>
 
-  <footer>
-    <p><a href="/privacy-policy">Privacy Policy</a> · <a href="/data-deletion">Data Deletion</a></p>
+  <footer id="contact">
+    <p>Contact: <a href="mailto:DerrellHennings@3amiglobal.com">DerrellHennings@3amiglobal.com</a></p>
+    <p><a href="/privacy-policy">Privacy Policy</a> · <a href="/terms-of-service">Terms of Service</a> · <a href="/data-deletion">Data Deletion</a></p>
     <p>© 3amiGlobal LLC · 3amiGlobal LLC, C/O Derrell Hennings, 97 West Avenue, Buffalo, NY 14201</p>
+    <p>One World. Infinite Voices. Endless Possibilities.™</p>
   </footer>
 </main>
 </body>
